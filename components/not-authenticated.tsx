@@ -24,7 +24,7 @@ export default function NotAuthenticated() {
         </CardHeader>
         <CardContent className="text-center">
           <p className="text-muted-foreground">
-            Please log in to your account to view this content. If you dont
+            Please log in to your account to view this content. If you don't
             have an account, you can sign up for free.
           </p>
         </CardContent>
@@ -33,7 +33,7 @@ export default function NotAuthenticated() {
             <a href="/auth/login">Log in</a>
           </Button>
           <Button asChild variant="outline" className="w-full">
-            <a href="/auth/login">Log in</a>
+            <a href="/auth/login?screen_hint=signup">Sign up</a>
           </Button>
         </CardFooter>
       </Card>
