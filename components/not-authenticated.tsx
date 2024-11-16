@@ -24,7 +24,7 @@ export default function NotAuthenticated() {
         </CardHeader>
         <CardContent className="text-center">
           <p className="text-muted-foreground">
-            Please log in to your account to view this content. If you don't
+            Please log in to your account to view this content. If you dont
             have an account, you can sign up for free.
           </p>
         </CardContent>

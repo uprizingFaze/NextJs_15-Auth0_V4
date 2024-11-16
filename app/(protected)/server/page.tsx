@@ -16,8 +16,8 @@ export default async function ServerAuth() {
 
       <Card className="max-w-md w-full mx-4">
         <CardHeader className="flex flex-row items-center gap-4 relative">
-          <Badge variant="yellow" className="absolute top-4 right-4">
-            Server
+          <Badge variant="blue" className="absolute top-4 right-4">
+            Server Component
           </Badge>
           <Avatar>
             <AvatarImage src={session.user.picture} alt={session.user.name} />

@@ -5,11 +5,9 @@ import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import NotAuthenticated from "@/components/not-authenticated";
-import { useRouter } from "next/navigation";
 
 export default function ServerAuth() {
   const { user } = useUser();
-  const router = useRouter();
 
   if (!user) {
     return <NotAuthenticated />;
@@ -18,8 +16,8 @@ export default function ServerAuth() {
   return (
     <Card className="max-w-md w-full mx-4">
       <CardHeader className="flex flex-row items-center gap-4 relative">
-        <Badge variant="yellow" className="absolute top-4 right-4">
-          Client
+        <Badge variant="blue" className="absolute top-4 right-4">
+          Client Component
         </Badge>
         <Avatar>
           <AvatarImage src={user?.picture} alt={user?.name} />
